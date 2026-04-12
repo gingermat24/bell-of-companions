@@ -36,14 +36,12 @@ Please provide as much information as possible so I can help faster.
 - `high-priority` - Should be fixed as soon as possible
 - `low-priority` - Low impact - can be addressed later
 
-**Minecraft Version**
-- `1.21.1` - Affects Minecraft version 1.21.1
-- `1.21.11` - Affects Minecraft version 1.21.11
-
-**Mod Version**
-- `26.1` - Affects mod version 26.1
-- `26.1.1` - Affects mod version 26.1.1
-- `26.1.2` - Affects mod version 26.1.2
+**MC Version**
+- `1.21.1` 
+- `1.21.11` 
+- `26.1`
+- `26.1.1`
+- `26.1.2` 
 
 **Status**
 - `duplicate` - Already reported - see the linked issue
