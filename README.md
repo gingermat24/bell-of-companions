@@ -26,27 +26,30 @@ Please provide as much information as possible so I can help faster.
 ## Useful Labels
 
 **Type**
-- `bug` - Something is broken
-- `enhancement` - Feature request or improvement
-- `question` - General question
-- `crash` - Game crashes when using the mod
+- `bug` - Something isn't working as expected
+- `crash` - The game crashes when loading or using the mod
+- `enhancement` - A request for a new feature or an improvement to existing behavior
+- `compatibility` - Causes issues or conflicts when used alongside another mod
+- `question` - A question about how to use the mod - not a bug report
 
 **Priority**
-- `high-priority`
-- `low-priority`
+- `high-priority` - Should be fixed as soon as possible
+- `low-priority` - Low impact - can be addressed later
 
-**Version**
-- `1.21.1`
-- `1.21.11`
-- `26.1`
-- `26.1.1`
-- `26.1.2`
+**Minecraft Version**
+- `1.21.1` - Affects Minecraft version 1.21.1
+- `1.21.11` - Affects Minecraft version 1.21.11
 
-**Other**
-- `compatibility` - Works badly with another mod
-- `documentation` - Docs or description needs improvement
-- `duplicate`
-- `wontfix`
+**Mod Version**
+- `26.1` - Affects mod version 26.1
+- `26.1.1` - Affects mod version 26.1.1
+- `26.1.2` - Affects mod version 26.1.2
+
+**Status**
+- `duplicate` - Already reported - see the linked issue
+- `wontfix` - Will not be fixed or implemented
+- `documentation` - The mod page or documentation needs to be updated or improved
+- `invalid` - Not a valid bug - may be wrong usage, outdated game version, or user error
 
 ---
 
