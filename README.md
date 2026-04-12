@@ -36,7 +36,7 @@ Please provide as much information as possible so I can help faster.
 - `high-priority` - Should be fixed as soon as possible
 - `low-priority` - Low impact - can be addressed later
 
-**MC Version**
+**MC Versions**
 - `1.21.1` 
 - `1.21.11` 
 - `26.1`
