@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions (questions & ideas)
+    url: https://github.com/gingermat24/bell-of-companions-issues/discussions
+    about: For general questions, ideas, or feedback that don't fit the issue templates, please use Discussions.
+  - name: 🌐 Mod Page (Modrinth)
+    url: https://modrinth.com/mod/bell-of-companions
+    about: Visit the official mod page for downloads and changelogs.
