@@ -70,16 +70,6 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    id: mod_loader
-    attributes:
-      label: Mod loader
-      description: Bell of Companions is Fabric only.
-      options:
-        - "Fabric"
-    validations:
-      required: true
-
   - type: textarea
     id: other_mods
     attributes:

@@ -1,0 +1,58 @@
+name: Label and Tag Issues by Version
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  label-and-title:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.issue.body || '';
+            const title = context.payload.issue.title;
+            const issueNumber = context.payload.issue.number;
+
+            const validMcVersions = ['26.1.2', '26.1.1', '26.1', '1.21.11', '1.21.1'];
+
+            // Extract Minecraft version from the form body
+            const mcMatch = body.match(/### Minecraft version(?:\s*\(if relevant\))?\s*\n+([^\n#]+)/);
+            const mcVersion = mcMatch ? mcMatch[1].trim() : null;
+
+            // Extract Mod version from the form body (bug report only)
+            const modMatch = body.match(/### Mod version\s*\n+([^\n#]+)/);
+            const modVersion = modMatch ? modMatch[1].trim() : null;
+
+            const labelsToAdd = [];
+            const titleSuffixes = [];
+
+            if (mcVersion && validMcVersions.includes(mcVersion)) {
+              labelsToAdd.push(mcVersion);
+              titleSuffixes.push(`[${mcVersion}]`);
+            }
+
+            if (modVersion && modVersion !== 'All versions') {
+              titleSuffixes.push(`[mod ${modVersion}]`);
+            }
+
+            if (labelsToAdd.length > 0) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                labels: labelsToAdd,
+              });
+            }
+
+            if (titleSuffixes.length > 0) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                title: `${title} ${titleSuffixes.join(' ')}`,
+              });
+            }
