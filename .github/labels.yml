@@ -1,0 +1,62 @@
+# Labels for Bell of Companions issue tracker
+# Synced automatically via the sync-labels workflow.
+
+- name: bug
+  color: "d73a4a"
+  description: Something is broken
+
+- name: enhancement
+  color: "a2eeef"
+  description: Feature request or improvement
+
+- name: question
+  color: "d876e3"
+  description: General question
+
+- name: crash
+  color: "b60205"
+  description: Game crashes when using the mod
+
+- name: high-priority
+  color: "e11d48"
+  description: Needs to be addressed urgently
+
+- name: low-priority
+  color: "fef9c3"
+  description: Minor issue, low urgency
+
+- name: "1.21.1"
+  color: "0075ca"
+  description: Affects Minecraft 1.21.1
+
+- name: "1.21.11"
+  color: "0075ca"
+  description: Affects Minecraft 1.21.11
+
+- name: "26.1"
+  color: "0075ca"
+  description: Affects Minecraft 26.1
+
+- name: "26.1.1"
+  color: "0075ca"
+  description: Affects Minecraft 26.1.1
+
+- name: "26.1.2"
+  color: "0075ca"
+  description: Affects Minecraft 26.1.2
+
+- name: compatibility
+  color: "e4e669"
+  description: Works badly with another mod
+
+- name: documentation
+  color: "0052cc"
+  description: Docs or description needs improvement
+
+- name: duplicate
+  color: "cfd3d7"
+  description: This issue or pull request already exists
+
+- name: wontfix
+  color: "ffffff"
+  description: This will not be worked on

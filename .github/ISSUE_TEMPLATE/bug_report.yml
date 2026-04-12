@@ -1,0 +1,107 @@
+name: Bug Report
+description: Report a bug or unexpected behavior in Bell of Companions.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill in as much detail as possible.
+
+        > ⚠️ **Reminder:** Bug fixes are only provided for mod version **1.4.0**. If you are on an older version, please update first.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+      placeholder: "Example: When I ring the bell, my horse doesn't teleport to me."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to reproduce
+      description: Step-by-step instructions to reproduce the issue.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Do '....'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened instead?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: minecraft_version
+    attributes:
+      label: Minecraft version
+      options:
+        - "26.1.2"
+        - "26.1.1"
+        - "26.1"
+        - "1.21.11"
+        - "1.21.1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mod_version
+    attributes:
+      label: Mod version
+      description: Only version 1.4.0 receives bug fixes.
+      options:
+        - "1.4.0"
+        - "1.3.1"
+        - "1.3.0"
+        - "1.2.0"
+        - "1.1.0"
+        - "1.1.0BETA"
+        - "1.0.0-hotfix"
+        - "1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mod_loader
+    attributes:
+      label: Mod loader
+      description: Bell of Companions is Fabric only.
+      options:
+        - "Fabric"
+    validations:
+      required: true
+
+  - type: textarea
+    id: other_mods
+    attributes:
+      label: Other mods installed
+      description: List any other mods, especially if this might be a compatibility issue.
+      placeholder: "Example: Sodium 0.6.0, Iris 1.8.0"
+
+  - type: textarea
+    id: crash_log
+    attributes:
+      label: Crash log / latest.log
+      description: Paste your crash log or latest.log here (or upload the file). This is very helpful for diagnosing the issue.
+      render: text
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / Videos
+      description: If applicable, add screenshots or a short video to help explain the problem.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Anything else that might help diagnose the issue?

@@ -1,0 +1,57 @@
+name: Feature Request / Enhancement
+description: Suggest a new feature or improvement for Bell of Companions.
+title: "[Enhancement] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your suggestion! Please describe your idea as clearly as possible.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Feature summary
+      description: A short, clear description of the feature or improvement you'd like to see.
+      placeholder: "Example: Add support for naming individual pets so the bell can call a specific one."
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem this solves
+      description: What problem or limitation does this feature address?
+      placeholder: "Example: Currently the bell calls all tagged pets at once, but I only want to summon one specific pet."
+
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Proposed solution
+      description: How would you like this feature to work? Be as specific as you can.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Have you thought of any other ways to solve the problem?
+
+  - type: dropdown
+    id: minecraft_version
+    attributes:
+      label: Minecraft version (if relevant)
+      options:
+        - "26.1.2"
+        - "26.1.1"
+        - "26.1"
+        - "1.21.11"
+        - "1.21.1"
+        - "All versions"
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Anything else you'd like to add? Screenshots, mockups, references, etc.
