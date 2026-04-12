@@ -1,4 +1,4 @@
-# Bell of Companions — Issue Tracker
+# Bell of Companions - Issue Tracker
 
 This repository is the official **issue tracker** for **Bell of Companions**, a Minecraft mod that lets you tag your pets and instantly call them back to your side with a magical bell.
 
@@ -6,7 +6,6 @@ This repository is the official **issue tracker** for **Bell of Companions**, a 
 
 ### How to report something
 - Use the **Issues** tab for bugs and feature requests.
-- Use the **Discussions** tab for questions, ideas, or general feedback.
 
 Please provide as much information as possible so I can help faster.
 
@@ -27,10 +26,10 @@ Please provide as much information as possible so I can help faster.
 ## Useful Labels
 
 **Type**
-- `bug` — Something is broken
-- `enhancement` — Feature request or improvement
-- `question` — General question
-- `crash` — Game crashes when using the mod
+- `bug` - Something is broken
+- `enhancement` - Feature request or improvement
+- `question` - General question
+- `crash` - Game crashes when using the mod
 
 **Priority**
 - `high-priority`
@@ -44,8 +43,8 @@ Please provide as much information as possible so I can help faster.
 - `26.1.2`
 
 **Other**
-- `compatibility` — Works badly with another mod
-- `documentation` — Docs or description needs improvement
+- `compatibility` - Works badly with another mod
+- `documentation` - Docs or description needs improvement
 - `duplicate`
 - `wontfix`
 
