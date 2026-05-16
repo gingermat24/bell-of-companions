@@ -8,7 +8,7 @@ body:
       value: |
         Thanks for taking the time to report a bug! Please fill in as much detail as possible.
 
-        > ⚠️ **Reminder:** Bug fixes and active development are focused on mod version **1.4.1**. If you are on an older version, please update first.
+        > ⚠️ **Reminder:** Bug fixes and active development are focused on mod version **1.5.0**. If you are on an older version, please update first.
 
   - type: textarea
     id: description
@@ -57,16 +57,16 @@ body:
     id: mod_version
     attributes:
       label: Mod version
-      description: Bug fixes are focused on version 1.4.1. Older versions are no longer actively maintained.
+      description: Bug fixes are focused on version 1.5.0. Older versions are no longer actively maintained.
       options:
-        - "1.4.1"
+        - "1.5.0"
         - "1.4.0"
         - "1.3.1"
         - "1.3.0"
         - "1.2.0"
         - "1.1.0"
         - "1.1.0BETA"
-        - "1.0.0-hotfix"
+        - "1.0.0HOTFIX"
         - "1.0.0"
     validations:
       required: true
